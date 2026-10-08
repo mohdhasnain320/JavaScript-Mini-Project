@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals - Week 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Week 3 - JavaScript Fundamentals</h1>
+        <p class="subtitle">Internship Practice Project</p>
+
+        <!-- Even Odd -->
+        <section class="card">
+            <h2>1. Even or Odd Checker</h2>
+
+            <input type="number" id="numberInput"
+                   placeholder="Enter a number">
+
+            <button onclick="checkEvenOdd()">Check</button>
+
+            <p id="result"></p>
+        </section>
+
+
+        <!-- Color Changer -->
+        <section class="card">
+            <h2>2. Button Color Changer</h2>
+
+            <button id="colorButton" onclick="changeColor()">
+                Click Me
+            </button>
+        </section>
+
+
+        <!-- Calculator -->
+        <section class="card calculator">
+            <h2>3. Simple Calculator</h2>
+
+            <input type="text" id="display" readonly>
+
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLast()">←</button>
+                <button onclick="appendValue('%')">%</button>
+                <button onclick="appendValue('/')">÷</button>
+
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('*')">×</button>
+
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('-')">−</button>
+
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="appendValue('+')">+</button>
+
+                <button onclick="appendValue('0')">0</button>
+                <button onclick="appendValue('.')">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+            </div>
+        </section>
+
+
+        <!-- Date -->
+        <section class="card">
+            <h2>4. Today's Date</h2>
+
+            <p id="date"></p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
